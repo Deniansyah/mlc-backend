@@ -1,0 +1,558 @@
+{
+	"info": {
+		"_postman_id": "b4b31bbd-09c6-455a-8d63-a8bdce3ae815",
+		"name": "MLC",
+		"description": "MANAGE LABELS AND CATEGORIES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23613891"
+	},
+	"item": [
+		{
+			"name": "USERS",
+			"item": [
+				{
+					"name": "GET ALL USERS",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNDYwNTEzLCJleHAiOjE3MjM0NjQxMTN9.Z4N0P2lxBCviMjPEiGc2ItPwXgpv75MvNKY4x5peNw8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/api/users/",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DETAIL USER",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNDYwNTEzLCJleHAiOjE3MjM0NjQxMTN9.Z4N0P2lxBCviMjPEiGc2ItPwXgpv75MvNKY4x5peNw8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/api/users/2",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE USER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "andri@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Lesmana123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/users",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE USER",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNDYwNTEzLCJleHAiOjE3MjM0NjQxMTN9.Z4N0P2lxBCviMjPEiGc2ItPwXgpv75MvNKY4x5peNw8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "andri@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Lesmana321",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/users/3",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE USER",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNDYwNTEzLCJleHAiOjE3MjM0NjQxMTN9.Z4N0P2lxBCviMjPEiGc2ItPwXgpv75MvNKY4x5peNw8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/api/users/5",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AUTH",
+			"item": [
+				{
+					"name": "LOGIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "deni@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Dean61slalu",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/auth/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "REGISTER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "ansyah@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Dean61slalu",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/auth/register",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "LABELS",
+			"item": [
+				{
+					"name": "GET ALL LABELS",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNjY5Mzc0LCJleHAiOjE3MjM2NzI5NzR9.v1aTLDeft-CSjJ2sP44IkYE-iZYwX0qK0_igAIJK9eQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/api/labels",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"labels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DETAIL LABEL",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNDYwNTEzLCJleHAiOjE3MjM0NjQxMTN9.Z4N0P2lxBCviMjPEiGc2ItPwXgpv75MvNKY4x5peNw8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/api/labels/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"labels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE LABEL",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNjY5Mzc0LCJleHAiOjE3MjM2NzI5NzR9.v1aTLDeft-CSjJ2sP44IkYE-iZYwX0qK0_igAIJK9eQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Turun Berat Badan",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Defisit Kalori",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/labels",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"labels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE LABEL",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNDYwNTEzLCJleHAiOjE3MjM0NjQxMTN9.Z4N0P2lxBCviMjPEiGc2ItPwXgpv75MvNKY4x5peNw8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Hidup Sehat",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "4 Sehat 5 Sempurna Dan Olah Raga",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/labels/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"labels",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE LABEL",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNDYwNTEzLCJleHAiOjE3MjM0NjQxMTN9.Z4N0P2lxBCviMjPEiGc2ItPwXgpv75MvNKY4x5peNw8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/api/labels/2",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"labels",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CATEGORIES",
+			"item": [
+				{
+					"name": "GET ALL CATEGORIES",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNjY5Mzc0LCJleHAiOjE3MjM2NzI5NzR9.v1aTLDeft-CSjJ2sP44IkYE-iZYwX0qK0_igAIJK9eQ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/api/categories",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET DETAIL CATEGORY",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNDYwNTEzLCJleHAiOjE3MjM0NjQxMTN9.Z4N0P2lxBCviMjPEiGc2ItPwXgpv75MvNKY4x5peNw8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/api/categories/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE CATEGORY",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNDYwNTEzLCJleHAiOjE3MjM0NjQxMTN9.Z4N0P2lxBCviMjPEiGc2ItPwXgpv75MvNKY4x5peNw8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Customer Type",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Tipe-tipe Pembeli",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/categories",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE CATEGORY",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNDYwNTEzLCJleHAiOjE3MjM0NjQxMTN9.Z4N0P2lxBCviMjPEiGc2ItPwXgpv75MvNKY4x5peNw8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Customer Type",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Tipe Pembeli",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/categories/2",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE CATEGORY",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzIzNDYwNTEzLCJleHAiOjE3MjM0NjQxMTN9.Z4N0P2lxBCviMjPEiGc2ItPwXgpv75MvNKY4x5peNw8",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/api/categories/2",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"categories",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
